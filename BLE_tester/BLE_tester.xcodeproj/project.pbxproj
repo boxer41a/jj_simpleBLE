@@ -23,24 +23,23 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0C447E412DCD920B00AB1EF0 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		0C447E422DCD920B00AB1EF0 /* export.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = export.h; sourceTree = "<group>"; };
+		0C447E442DCD920B00AB1EF0 /* kvn_bytearray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kvn_bytearray.h; sourceTree = "<group>"; };
+		0C447E452DCD920B00AB1EF0 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		0C447E462DCD920B00AB1EF0 /* Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Types.h; sourceTree = "<group>"; };
+		0C447E472DCD920B00AB1EF0 /* Service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Service.h; sourceTree = "<group>"; };
+		0C447E482DCD920B00AB1EF0 /* Adapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Adapter.h; sourceTree = "<group>"; };
+		0C447E492DCD920B00AB1EF0 /* Exceptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exceptions.h; sourceTree = "<group>"; };
+		0C447E4A2DCD920B00AB1EF0 /* Descriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Descriptor.h; sourceTree = "<group>"; };
+		0C447E4B2DCD920B00AB1EF0 /* Logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logging.h; sourceTree = "<group>"; };
+		0C447E4C2DCD920B00AB1EF0 /* AdapterSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdapterSafe.h; sourceTree = "<group>"; };
+		0C447E4D2DCD920B00AB1EF0 /* Characteristic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Characteristic.h; sourceTree = "<group>"; };
+		0C447E4E2DCD920B00AB1EF0 /* PeripheralSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeripheralSafe.h; sourceTree = "<group>"; };
+		0C447E4F2DCD920B00AB1EF0 /* Peripheral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Peripheral.h; sourceTree = "<group>"; };
+		0C447E502DCD920B00AB1EF0 /* SimpleBLE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleBLE.h; sourceTree = "<group>"; };
 		0CBC50D72DCBE58D0002FED7 /* BLE_tester */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BLE_tester; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CBC50DA2DCBE58D0002FED7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		0CBC50E22DCBE6BC0002FED7 /* libsimpleble.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsimpleble.a; path = "../libsimpleble_macos-x64 (Simple BLE v0.9.1)/static/lib/libsimpleble.a"; sourceTree = "<group>"; };
-		0CBC50E42DCBE6C60002FED7 /* Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
-		0CBC50E52DCBE6C60002FED7 /* export.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = export.h; sourceTree = "<group>"; };
-		0CBC50E72DCBE6C60002FED7 /* kvn_bytearray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kvn_bytearray.h; sourceTree = "<group>"; };
-		0CBC50E82DCBE6C60002FED7 /* Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
-		0CBC50E92DCBE6C60002FED7 /* Types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Types.h; sourceTree = "<group>"; };
-		0CBC50EA2DCBE6C60002FED7 /* Service.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Service.h; sourceTree = "<group>"; };
-		0CBC50EB2DCBE6C60002FED7 /* Adapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Adapter.h; sourceTree = "<group>"; };
-		0CBC50EC2DCBE6C60002FED7 /* Exceptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Exceptions.h; sourceTree = "<group>"; };
-		0CBC50ED2DCBE6C60002FED7 /* Descriptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Descriptor.h; sourceTree = "<group>"; };
-		0CBC50EE2DCBE6C60002FED7 /* Logging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Logging.h; sourceTree = "<group>"; };
-		0CBC50EF2DCBE6C60002FED7 /* AdapterSafe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdapterSafe.h; sourceTree = "<group>"; };
-		0CBC50F02DCBE6C60002FED7 /* Characteristic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Characteristic.h; sourceTree = "<group>"; };
-		0CBC50F12DCBE6C60002FED7 /* PeripheralSafe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PeripheralSafe.h; sourceTree = "<group>"; };
-		0CBC50F22DCBE6C60002FED7 /* Peripheral.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Peripheral.h; sourceTree = "<group>"; };
-		0CBC50F32DCBE6C60002FED7 /* SimpleBLE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleBLE.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +53,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C447E3F2DCD920B00AB1EF0 /* includes */ = {
+			isa = PBXGroup;
+			children = (
+				0C447E402DCD920B00AB1EF0 /* simpleble */,
+			);
+			name = includes;
+			path = ../../includes;
+			sourceTree = "<group>";
+		};
+		0C447E402DCD920B00AB1EF0 /* simpleble */ = {
+			isa = PBXGroup;
+			children = (
+				0C447E412DCD920B00AB1EF0 /* Utils.h */,
+				0C447E422DCD920B00AB1EF0 /* export.h */,
+				0C447E432DCD920B00AB1EF0 /* kvn */,
+				0C447E452DCD920B00AB1EF0 /* Config.h */,
+				0C447E462DCD920B00AB1EF0 /* Types.h */,
+				0C447E472DCD920B00AB1EF0 /* Service.h */,
+				0C447E482DCD920B00AB1EF0 /* Adapter.h */,
+				0C447E492DCD920B00AB1EF0 /* Exceptions.h */,
+				0C447E4A2DCD920B00AB1EF0 /* Descriptor.h */,
+				0C447E4B2DCD920B00AB1EF0 /* Logging.h */,
+				0C447E4C2DCD920B00AB1EF0 /* AdapterSafe.h */,
+				0C447E4D2DCD920B00AB1EF0 /* Characteristic.h */,
+				0C447E4E2DCD920B00AB1EF0 /* PeripheralSafe.h */,
+				0C447E4F2DCD920B00AB1EF0 /* Peripheral.h */,
+				0C447E502DCD920B00AB1EF0 /* SimpleBLE.h */,
+			);
+			path = simpleble;
+			sourceTree = "<group>";
+		};
+		0C447E432DCD920B00AB1EF0 /* kvn */ = {
+			isa = PBXGroup;
+			children = (
+				0C447E442DCD920B00AB1EF0 /* kvn_bytearray.h */,
+			);
+			path = kvn;
+			sourceTree = "<group>";
+		};
 		0CBC50CE2DCBE58D0002FED7 = {
 			isa = PBXGroup;
 			children = (
 				0CBC50D92DCBE58D0002FED7 /* BLE_tester */,
 				0CBC50D82DCBE58D0002FED7 /* Products */,
-				0CBC50E12DCBE6BC0002FED7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,49 +111,10 @@
 		0CBC50D92DCBE58D0002FED7 /* BLE_tester */ = {
 			isa = PBXGroup;
 			children = (
+				0C447E3F2DCD920B00AB1EF0 /* includes */,
 				0CBC50DA2DCBE58D0002FED7 /* main.cpp */,
 			);
 			path = BLE_tester;
-			sourceTree = "<group>";
-		};
-		0CBC50E12DCBE6BC0002FED7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				0CBC50E32DCBE6C60002FED7 /* simpleble */,
-				0CBC50E22DCBE6BC0002FED7 /* libsimpleble.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		0CBC50E32DCBE6C60002FED7 /* simpleble */ = {
-			isa = PBXGroup;
-			children = (
-				0CBC50E42DCBE6C60002FED7 /* Utils.h */,
-				0CBC50E52DCBE6C60002FED7 /* export.h */,
-				0CBC50E62DCBE6C60002FED7 /* kvn */,
-				0CBC50E82DCBE6C60002FED7 /* Config.h */,
-				0CBC50E92DCBE6C60002FED7 /* Types.h */,
-				0CBC50EA2DCBE6C60002FED7 /* Service.h */,
-				0CBC50EB2DCBE6C60002FED7 /* Adapter.h */,
-				0CBC50EC2DCBE6C60002FED7 /* Exceptions.h */,
-				0CBC50ED2DCBE6C60002FED7 /* Descriptor.h */,
-				0CBC50EE2DCBE6C60002FED7 /* Logging.h */,
-				0CBC50EF2DCBE6C60002FED7 /* AdapterSafe.h */,
-				0CBC50F02DCBE6C60002FED7 /* Characteristic.h */,
-				0CBC50F12DCBE6C60002FED7 /* PeripheralSafe.h */,
-				0CBC50F22DCBE6C60002FED7 /* Peripheral.h */,
-				0CBC50F32DCBE6C60002FED7 /* SimpleBLE.h */,
-			);
-			name = simpleble;
-			path = "../libsimpleble_macos-x64 (Simple BLE v0.9.1)/static/include/simpleble";
-			sourceTree = "<group>";
-		};
-		0CBC50E62DCBE6C60002FED7 /* kvn */ = {
-			isa = PBXGroup;
-			children = (
-				0CBC50E72DCBE6C60002FED7 /* kvn_bytearray.h */,
-			);
-			path = kvn;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,6 +294,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/includes/";
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/jjj/jj_github/jj_simpleBLE/libsimpleble_macos-x64",
+					"(Simple",
+					BLE,
+					"v0.9.1)/static/lib/",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -304,6 +309,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/includes/";
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/jjj/jj_github/jj_simpleBLE/libsimpleble_macos-x64",
+					"(Simple",
+					BLE,
+					"v0.9.1)/static/lib/",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
