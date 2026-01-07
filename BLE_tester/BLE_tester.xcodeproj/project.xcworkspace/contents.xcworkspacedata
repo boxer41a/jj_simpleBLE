@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:BLE_tester.xcodeproj">
+      location = "group:../BLE_tester/includes/simpleble_c">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>

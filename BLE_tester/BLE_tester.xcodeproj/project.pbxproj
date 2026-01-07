@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CB4CEC82DD50C3900E73029 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CB4CEC72DD50C3900E73029 /* CoreBluetooth.framework */; };
+		0CB4CECA2DD50C8800E73029 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CB4CEC92DD50C8800E73029 /* Foundation.framework */; };
+		0CB4CECB2DD50D6A00E73029 /* libsimpleble.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C63471A2DD507E6000A67FC /* libsimpleble.a */; };
 		0CBC50DB2DCBE58D0002FED7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0CBC50DA2DCBE58D0002FED7 /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +41,10 @@
 		0C447E4E2DCD920B00AB1EF0 /* PeripheralSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeripheralSafe.h; sourceTree = "<group>"; };
 		0C447E4F2DCD920B00AB1EF0 /* Peripheral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Peripheral.h; sourceTree = "<group>"; };
 		0C447E502DCD920B00AB1EF0 /* SimpleBLE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleBLE.h; sourceTree = "<group>"; };
+		0C63471A2DD507E6000A67FC /* libsimpleble.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsimpleble.a; path = ../libs/libsimpleble.a; sourceTree = "<group>"; };
+		0CB4CEC72DD50C3900E73029 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		0CB4CEC92DD50C8800E73029 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0CB4CED62DD59F2900E73029 /* simpleble_c */ = {isa = PBXFileReference; lastKnownFileType = folder; path = simpleble_c; sourceTree = "<group>"; };
 		0CBC50D72DCBE58D0002FED7 /* BLE_tester */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BLE_tester; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CBC50DA2DCBE58D0002FED7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -47,6 +54,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CB4CECB2DD50D6A00E73029 /* libsimpleble.a in Frameworks */,
+				0CB4CECA2DD50C8800E73029 /* Foundation.framework in Frameworks */,
+				0CB4CEC82DD50C3900E73029 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				0C447E402DCD920B00AB1EF0 /* simpleble */,
+				0CB4CED62DD59F2900E73029 /* simpleble_c */,
 			);
 			name = includes;
 			path = ../../includes;
@@ -92,11 +103,22 @@
 			path = kvn;
 			sourceTree = "<group>";
 		};
+		0C6347192DD507E6000A67FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CB4CEC92DD50C8800E73029 /* Foundation.framework */,
+				0CB4CEC72DD50C3900E73029 /* CoreBluetooth.framework */,
+				0C63471A2DD507E6000A67FC /* libsimpleble.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0CBC50CE2DCBE58D0002FED7 = {
 			isa = PBXGroup;
 			children = (
 				0CBC50D92DCBE58D0002FED7 /* BLE_tester */,
 				0CBC50D82DCBE58D0002FED7 /* Products */,
+				0C6347192DD507E6000A67FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -293,14 +315,10 @@
 		0CBC50DF2DCBE58D0002FED7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CODE_SIGN_STYLE = Automatic;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/includes/";
-				LIBRARY_SEARCH_PATHS = (
-					"/Users/jjj/jj_github/jj_simpleBLE/libsimpleble_macos-x64",
-					"(Simple",
-					BLE,
-					"v0.9.1)/static/lib/",
-				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../includes/";
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../libs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -308,14 +326,10 @@
 		0CBC50E02DCBE58D0002FED7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CODE_SIGN_STYLE = Automatic;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/includes/";
-				LIBRARY_SEARCH_PATHS = (
-					"/Users/jjj/jj_github/jj_simpleBLE/libsimpleble_macos-x64",
-					"(Simple",
-					BLE,
-					"v0.9.1)/static/lib/",
-				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../includes/";
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../libs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
